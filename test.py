@@ -15,10 +15,18 @@ bot.send_message(admin_id, 'Инициация бота...')
 @bot.message_handler(commands=['restart'])
 def start(message):
   os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
+  
+@bot.message_handler(commands=['stop'])
+def start(message):
+  os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
 
 @bot.message_handler(commands=['error'])
 def start(message):
     print(message.for_error)
+
+@bot.message_handler(commands=['stop'])
+def start(message):
+    bot.stop_polling()
 
 
 @bot.message_handler(commands=['update'])
