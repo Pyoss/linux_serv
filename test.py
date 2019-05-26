@@ -9,14 +9,14 @@ bot = bot_watcher.bot
 admin_id = 197216910
 bot.send_message(admin_id, 'Инициация бота...')
 
-#subprocess.call(['./monitor.sh']) # Thanks @Jim Dennis for suggesting the []
+#) # Thanks @Jim Dennis for suggesting the []
 #
 
 @bot.message_handler(commands=['restart'])
 def start(message):
-  os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
+  subprocess.call(['./update.sh'])
   
-@bot.message_handler(commands=['stop'])
+@bot.message_handler(commands=['update'])
 def start(message):
   os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
 
