@@ -1,5 +1,5 @@
 
 #!/bin/sh
 
-echo git pull
+git pull
 ./monitor.sh
