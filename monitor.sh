@@ -1,4 +1,3 @@
 #!/bin/bash
-printenv
-KEK=lold
-printenv
+git pull
+python -m test
