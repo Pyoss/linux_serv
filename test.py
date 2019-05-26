@@ -3,6 +3,7 @@ import sys
 import subprocess
 import time
 import telebot
+import bot_watcher
 
 bot = bot_watcher.bot
 admins_id = 197216910
