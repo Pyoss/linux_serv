@@ -6,7 +6,7 @@ import telebot
 import bot_watcher
 
 bot = bot_watcher.bot
-admins_id = 197216910
+admin_id = 197216910
 bot.send_message(admin_id, 'Инициация бота...')
 
 #subprocess.call(['./monitor.sh']) # Thanks @Jim Dennis for suggesting the []
