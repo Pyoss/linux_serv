@@ -1,10 +1,15 @@
 import os
 import sys
+import subprocess
+import time
 
 print(True)
-print(os.environ['KEK'])
+time.sleep(5)
 
-os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
+print(True)
+
+subprocess.call(['./monitor.sh']) # Thanks @Jim Dennis for suggesting the []
+#os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
 
 
 
