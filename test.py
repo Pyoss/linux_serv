@@ -4,7 +4,7 @@ import subprocess
 import time
 
 print(True)
-time.sleep(5)
+time.sleep(1)
 
 print(True)
 raise Exeption('test')
