@@ -1,4 +1,6 @@
+
 #!/bin/bash
-git pull
-echo "it's pulled 2"
-python -m test
+until python -m test; do
+    echo "'myscript.py' crashed with exit code $?. Restarting..." >&2
+    sleep 1
+done
