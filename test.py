@@ -8,7 +8,7 @@ time.sleep(5)
 
 print(True)
 
-subprocess.call(['./monitor.sh']) # Thanks @Jim Dennis for suggesting the []
+#subprocess.call(['./monitor.sh']) # Thanks @Jim Dennis for suggesting the []
 #os.execl(sys.executable, 'python',  __file__, *sys.argv[1:])
 
 
