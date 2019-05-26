@@ -17,7 +17,7 @@ def start(message):
   
 @bot.message_handler(commands=['update'])
 def start(message):
-  subprocess.call(['./update.sh'])
+  subprocess.Popen(['./update.sh'])
 
 @bot.message_handler(commands=['error'])
 def start(message):
