@@ -6,7 +6,7 @@ import telebot
 
 bot = telebot.TeleBot('777849028:AAFKdy8OJcLn37H7A8bJVsSCTSB-5S37zf4', threaded=False)
 admin_id = 197216910
-bot.send_message(admin_id, 'Инициация бота..2.')
+bot.send_message(admin_id, 'Инициация бота...')
 
 #) # Thanks @Jim Dennis for suggesting the []
 #
