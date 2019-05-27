@@ -1,5 +1,5 @@
 
 #!/bin/sh
-
-export ERROR_MSG=$(git pull)
+ERROR_MSG=$(git_pull)
+export ERROR_MSG
 ./monitor.sh
