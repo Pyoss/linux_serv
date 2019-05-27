@@ -1,6 +1,5 @@
 
 #!/bin/sh
 
-export ERROR_MSG=$(git pull)
-python -m bot_watcher
+git pull
 ./monitor.sh
