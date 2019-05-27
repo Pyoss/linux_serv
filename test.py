@@ -18,7 +18,7 @@ def start(message):
 @bot.message_handler(commands=['update'])
 def start(message):
   bot.stop_polling()
-  os.execl(sys.executable, 'sh',  './update.sh', *sys.argv[1:])
+  subprocess.Popen(['sh', './update.sh'])
 
 @bot.message_handler(commands=['error'])
 def start(message):
